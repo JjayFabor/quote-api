@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: django-quote-generator
+    name: quote-api
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn api.wsgi
