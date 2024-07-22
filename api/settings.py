@@ -86,6 +86,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # CORS configuration
 CORS_ALLOWED_ORIGINS = [
     "https://jjay-fabor.netlify.app",
+    "http://127.0.0.1:5173",
 ]
 
 # Internationalization
