@@ -2,8 +2,8 @@ services:
   - type: web
     name: quote-api
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn api.wsgi
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: gunicorn api.wsgi:application
     envVars:
       - key: SECRET_KEY
         fromDatabase: true
